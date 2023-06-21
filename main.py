@@ -12,9 +12,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
-    try:
-        await bot.send_message('lvp_soon', 'Бот активирован новым человеком')
-    except: pass
+    await bot.send_message(372512859, 'Бот активирован новым человеком')
     kb = types.InlineKeyboardMarkup(3)
     kb.add(types.InlineKeyboardButton('НАЧАТЬ ОБУЧЕНИЕ ✅', callback_data='next_1'))
     kb.add(types.InlineKeyboardButton('ЗАДАТЬ ВОПРОС ТРЕЙДЕРУ🤔', url='t.me/yar_pro_trading'))
