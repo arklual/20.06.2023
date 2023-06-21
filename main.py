@@ -17,7 +17,7 @@ async def send_welcome(message: types.Message):
     except: pass
     kb = types.InlineKeyboardMarkup(3)
     kb.add(types.InlineKeyboardButton('НАЧАТЬ ОБУЧЕНИЕ ✅', callback_data='next_1'))
-    kb.add(types.InlineKeyboardButton('ЗАДАТЬ ВОПРОС ТРЕЙДЕРУ🤔у', url='t.me/yar_pro_trading'))
+    kb.add(types.InlineKeyboardButton('ЗАДАТЬ ВОПРОС ТРЕЙДЕРУ🤔', url='t.me/yar_pro_trading'))
     kb.add(types.InlineKeyboardButton('КАНАЛ ТРЕЙДЕРА🌐', url='https://t.me/+uRdHytS46iw3NjRi'))
     await message.answer_photo(types.InputFile('1.jpg'), """
 <b>ДОБРО ПОЖАЛОВАТЬ В МОЙ БЕСПЛАТНЫЙ АВТОРСКИЙ КУРС ПО ТОРГОВЛЕ БИНАРНЫМИ ОПЦИОНАМИ🥳</b>
